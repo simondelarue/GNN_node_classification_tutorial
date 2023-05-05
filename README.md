@@ -3,7 +3,7 @@
 Recently, deep learning methods showed significant performance in various research fields, including computer vision and natural language processing. Graph Neural Network approaches have been specifically designed to take advantage of these great performances while applying them to graphs.  
 Learning information about object and their relations is done by following a **message passing framework**, where node representations $h_{u}^{l}$ of all nodes $u \in \mathcal{V}$ of a graph $\mathcal{G}=(\mathcal{V}, \mathcal{E})$ are iteratively updated by aggregating information from their local neighborhood $\mathcal{N}(u)$:
 
-$$h^{l+1}_{u} = \psi \biggl(h_{u}^{l}, f(h_{v}^{l}:v \in \mathcal{N}(u))\biggl)$$
+![equation](https://latex.codecogs.com/svg.image?h%5E%7Bl&plus;1%7D_%7Bu%7D%20=%20%5Cpsi%20%5Cbiggl(h_%7Bu%7D%5E%7Bl%7D,%20f(h_%7Bv%7D%5E%7Bl%7D:v%20%5Cin%20%5Cmathcal%7BN%7D(u))%5Cbiggl))
 
 In the above formulation, $f$ denotes an aggregation function of the node representations, and $\psi$ an update function.  
 Considering the toy graph in the image below, a graph neural network model updates a node (e.g the red node) by:  
